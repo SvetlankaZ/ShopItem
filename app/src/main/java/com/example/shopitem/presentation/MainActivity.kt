@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         viewModel.shopList.observe(this){
             Log.d("MainActivity", it.toString())
             if(count == 0){
-                count += 1
+                count++
                 val item = it[0]
                 viewModel.deleteShopItem(item)
             }
